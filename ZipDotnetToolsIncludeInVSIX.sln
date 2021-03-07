@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetNetToolZipIncludeToolTaskExe", "NugetNetToolZipIncludeToolTaskExe\NugetNetToolZipIncludeToolTaskExe.csproj", "{32E407AF-F0ED-4D0D-97F1-751F1E09FE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetNetToolMatchingPackageVersionZipIncludeToolTaskExe", "NugetNetToolMatchingPackageVersionZipIncludeToolTaskExe\NugetNetToolMatchingPackageVersionZipIncludeToolTaskExe.csproj", "{00ECB880-E8F3-4B6D-B252-C20B4E343549}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipDotnetToolsIncludeInVSIX", "ZipDotnetToolsIncludeInVSIX\ZipDotnetToolsIncludeInVSIX.csproj", "{0EC1F9C3-F72C-49C3-B090-7B507F8C0C24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipDotnetToolsIncludeInVSIXTask", "ZipDotnetToolsIncludeInVSIXTask\ZipDotnetToolsIncludeInVSIXTask.csproj", "{A90C7FB3-3B97-4F6A-B8AB-28E1340C83C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoVsixUsingTask", "DemoVsixUsingTask\DemoVsixUsingTask.csproj", "{64E2F5C4-AF93-4B1D-BE54-AFB5BD2A074F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8C1D112-9030-4EA9-98C2-9B36E379BB85}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E407AF-F0ED-4D0D-97F1-751F1E09FE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E407AF-F0ED-4D0D-97F1-751F1E09FE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E407AF-F0ED-4D0D-97F1-751F1E09FE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E407AF-F0ED-4D0D-97F1-751F1E09FE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00ECB880-E8F3-4B6D-B252-C20B4E343549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00ECB880-E8F3-4B6D-B252-C20B4E343549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00ECB880-E8F3-4B6D-B252-C20B4E343549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00ECB880-E8F3-4B6D-B252-C20B4E343549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC1F9C3-F72C-49C3-B090-7B507F8C0C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC1F9C3-F72C-49C3-B090-7B507F8C0C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC1F9C3-F72C-49C3-B090-7B507F8C0C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC1F9C3-F72C-49C3-B090-7B507F8C0C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90C7FB3-3B97-4F6A-B8AB-28E1340C83C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90C7FB3-3B97-4F6A-B8AB-28E1340C83C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90C7FB3-3B97-4F6A-B8AB-28E1340C83C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90C7FB3-3B97-4F6A-B8AB-28E1340C83C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E2F5C4-AF93-4B1D-BE54-AFB5BD2A074F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E2F5C4-AF93-4B1D-BE54-AFB5BD2A074F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E2F5C4-AF93-4B1D-BE54-AFB5BD2A074F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E2F5C4-AF93-4B1D-BE54-AFB5BD2A074F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF21EBB-775D-467D-A742-2FBCA431756E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿<Project>
+  <Target Name="NugetNetToolZipIncludes" BeforeTargets="GetVsixSourceItems" Returns="@(Content)">
+    <PropertyGroup>
+      <NugetNetToolZipAssetSettingsPath Condition="'$(NugetNetToolZipAssetSettingsPath)'==''">$(MSBuildProjectFullPath)</NugetNetToolZipAssetSettingsPath>
+    </PropertyGroup>
+    <Message Text="Generating Zip Files For VSIX from settings $(NugetNetToolZipAssetSettingsPath)" />
+    <NugetNetToolZipIncludeInVsixToolTask 
+        VSIXSubPath="$(NugetNetToolZipVSIXSubPath)" 
+        AssetFolder="$(NugetNetToolZipAssetFolder)" 
+        AssetSettingsPath="$(NugetNetToolZipAssetSettingsPath)"
+        ProjectFolder="$(MSBuildProjectDirectory)"
+        UseExisting="$(NugetNetToolZipUseExisting)"
+        Force="$(NugetNetToolZipForce)"
+        >
+          <Output TaskParameter="IncludedZipsInVsix" ItemName="Content" />
+    </NugetNetToolZipIncludeInVsixToolTask>
+    <NugetNetToolMatchingPackageVersionZipIncludeInVsixToolTask 
+      VSIXSubPath="$(NugetNetToolZipVSIXSubPath)" 
+      AssetFolder="$(NugetNetToolZipAssetFolder)" 
+      AssetSettingsPath="$(NugetNetToolZipAssetSettingsPath)"
+      ProjectFolder="$(MSBuildProjectDirectory)"
+      UseExisting="$(NugetNetToolZipUseExisting)"
+      Force="$(NugetNetToolZipForce)"
+      >
+          <Output TaskParameter="IncludedZipsInVsix" ItemName="Content" />
+    </NugetNetToolMatchingPackageVersionZipIncludeInVsixToolTask>
+  </Target>
+</Project>

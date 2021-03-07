@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AssetSettings>
+  <NugetNetToolZipAsset>
+    <ZipPrefix>coverlet.console</ZipPrefix>
+    <NetToolName>coverlet.console</NetToolName>
+  </NugetNetToolZipAsset>
+  <NugetNetToolZipAsset>
+    <ZipPrefix>microsoft.testplatform</ZipPrefix>
+    <NugetPackageName>microsoft.testplatform</NugetPackageName>
+  </NugetNetToolZipAsset>
+  <NugetNetToolZipAsset>
+    <ZipPrefix>openCover</ZipPrefix>
+    <NugetPackageName>openCover</NugetPackageName>
+  </NugetNetToolZipAsset>
+  <NugetNetToolZipAsset>
+    <ZipPrefix>coverlet.collector</ZipPrefix>
+    <NugetPackageName>coverlet.collector</NugetPackageName>
+    <VSIXSubPath>DifferentSubPath</VSIXSubPath>
+    <AssetFolder>OtherZipAssets</AssetFolder>
+  </NugetNetToolZipAsset>
+  <NugetNetToolPackageVersionZipAsset>
+    <ZipPrefix>reportGenerator</ZipPrefix>
+    <NetToolName>dotnet-reportgenerator-globaltool</NetToolName>
+    <ProjectFile>ReportGeneratorPlugins.aproj</ProjectFile>
+    <PackageReference>ReportGenerator.Core</PackageReference>
+  </NugetNetToolPackageVersionZipAsset>
+</AssetSettings>

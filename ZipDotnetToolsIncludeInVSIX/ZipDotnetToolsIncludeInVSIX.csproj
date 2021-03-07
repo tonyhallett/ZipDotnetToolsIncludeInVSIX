@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="build\ZipDotnetToolsIncludeInVSIX.props" PackagePath="build\" />
+    <Content Include="build\ZipDotnetToolsIncludeInVSIX.targets" PackagePath="build\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NugetNetToolMatchingPackageVersionZipIncludeToolTaskExe\NugetNetToolMatchingPackageVersionZipIncludeToolTaskExe.csproj">
+      <Private>true</Private>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\NugetNetToolZipIncludeToolTaskExe\NugetNetToolZipIncludeToolTaskExe.csproj">
+      <Private>true</Private>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\ZipDotnetToolsIncludeInVSIXTask\ZipDotnetToolsIncludeInVSIXTask.csproj">
+      <Private>true</Private>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+
+  </ItemGroup>
+
+  <PropertyGroup>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CreatePackNupkg</TargetsForTfmSpecificContentInPackage>
+    <PackageId>ZipDotnetToolsIncludeInVSIX</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Tony Hallett</Authors>
+    <Company />
+    <Product>ZipDotnetToolsIncludeInVSIX</Product>
+    <Description>MSBuild package to install and zip dotnet tools or nuget packages and include in VSIX</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Vsix MSBuild Task DotNet DotNetTool Nuget</PackageTags>
+    <PackageProjectUrl>https://github.com/tonyhallett/ZipDotnetToolsIncludeInVSIX</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tonyhallett/ZipDotnetToolsIncludeInVSIX.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+  
+  <Target Name="CreatePackNupkg">
+  <ItemGroup>
+    <TfmSpecificPackageFile Include="$(OutputPath)\*" Exclude="$(OutputPath)\$(MSBuildProjectName).*">
+      <PackagePath>tasks</PackagePath>
+    </TfmSpecificPackageFile>
+  </ItemGroup>    
+</Target>
+
+</Project>

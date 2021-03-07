@@ -1,0 +1,12 @@
+﻿<Project TreatAsLocalProperty="TaskAssembly">
+
+  <PropertyGroup>
+    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\ZipDotnetToolsIncludeInVSIXTask.dll</TaskAssembly>
+  </PropertyGroup>
+
+  <UsingTask TaskName="NugetNetToolMatchingPackageVersionZipIncludeInVsixToolTask" AssemblyFile="$(TaskAssembly)">
+  </UsingTask>
+
+  <UsingTask TaskName="NugetNetToolZipIncludeInVsixToolTask" AssemblyFile="$(TaskAssembly)">
+  </UsingTask>
+</Project>
