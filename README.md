@@ -1,8 +1,8 @@
-This project builds and MSBuild nuget package containing two tasks that will include zipped dotnet tools or nuget packages in a VSIX.
+This project builds an MSBuild nuget package containing two tasks that will include zipped dotnet tools or nuget packages in a VSIX.
 The zip files may be generated on each build and this can be configured.
 
 The nuget will add the necessary Target to the consuming vsix project and all that remains is to supply msbuild properties in the 
-consuming vsix project file.  If desired the consuming project create its own Target and use one of the two using tasks
+consuming vsix project file.  If desired, the consuming project can create its own Target and use one of the two using tasks
 NugetNetToolMatchingPackageVersionZipIncludeInVsixToolTask
 NugetNetToolZipIncludeInVsixToolTask
 
@@ -38,7 +38,7 @@ The Target added is :
 </Project>
 ```
 
-Both tasks are supplied the same arguments if this is not suitable then create your own Target.
+Both tasks are supplied the same arguments and if this is not suitable then create your own Target.
 The configuration for a task is done in an xml file - AssetSettingsPath.  For the provided Target this defaults to the consuming project file.
 Each task expects a specific tag :
 NugetNetToolZipIncludes - NugetNetToolZipAsset
